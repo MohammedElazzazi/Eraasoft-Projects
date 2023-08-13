@@ -5,6 +5,7 @@ class SearchPage extends StatelessWidget {
   SearchPage({super.key});
 
   String? cityName;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,7 +14,7 @@ class SearchPage extends StatelessWidget {
       ),
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16),
+          padding: const EdgeInsets.symmetric(horizontal: 15),
           child: TextField(
             onSubmitted: (data){
               cityName = data;
@@ -23,7 +24,7 @@ class SearchPage extends StatelessWidget {
             decoration: InputDecoration(
               contentPadding: EdgeInsets.symmetric(vertical: 30, horizontal: 24),
               label: Text('search'),
-                hintText: 'Enter a city',
+                hintText: 'Please Enter a city',
               suffixIcon: Icon(Icons.search),
               border: OutlineInputBorder(),
             ),

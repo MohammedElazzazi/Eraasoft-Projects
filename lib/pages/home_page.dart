@@ -9,8 +9,8 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'Weather App',
+        title: const Text(
+          'Weather App App',
         ),
         actions: [
           IconButton(
@@ -26,12 +26,12 @@ class HomePage extends StatelessWidget {
           ),
         ],
       ),
-      body: Center(
+      body: const Center(
           child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: EdgeInsets.all(8.0),
             child: Text(
               'there\'s no weather 😟 start searching now 🔍',
               style: TextStyle(
